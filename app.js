@@ -7,7 +7,11 @@ app.get('/', (req, res) => {
 app.get('/current-time', (req, res) => {
   let date = new Date();
 
-  res.send(date.toString());
+  let array = {
+    time: date.toString()
+  }
+
+  res.send(JSON.stringify(array));
 });
 
 app.get('/json', (req, res) => {
