@@ -1,7 +1,7 @@
 const app = require('express')()
 
 app.get('/', (req, res) => {
-  res.send("Hello from NodeJs backend.");
+  res.send("Hello from NodeJs backend. This is a test POC");
 });
 
 app.get('/current-time', (req, res) => {
